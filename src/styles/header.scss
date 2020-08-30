@@ -1,0 +1,47 @@
+@import "src/styles/main";
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   padding-inline-start: 0;
+   margin-block-start: 0;
+   margin-block-end: 0;
+}
+
+.right-nav {
+   display: flex;
+   flex-direction: row; 
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-list a, .logout-list a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 10px 16px;
+   text-decoration: none;
+}
+
+.nav-list a:hover, .logout-list a:hover{
+   background-color: $color_primary;
+}
+
+.logout-container{
+   display: flex;
+   justify-content: flex-end;
+   margin-left: 0.75em;
+   cursor: pointer;
+}
+
+.header{
+   background-color: $color_accent;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   position: sticky;
+   height: 10%;
+}

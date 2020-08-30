@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import AuthRoute from './components/auth/AuthRoute';
+import './styles/main.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginPage from './components/auth/Login';
+import HomePage from './components/user/Home';
+import CartPage from './components/user/Cart';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Switch>
+				<Route exact path='/log--in' component={LoginPage} />
+
+				<AuthRoute exact={true} path='/login'>
+					<LoginPage />
+				</AuthRoute>
+
+				<AuthRoute exact={true} path='/home'>
+					<HomePage />
+				</AuthRoute>
+
+				<AuthRoute exact={true} path='/user/cart'>
+					<CartPage />
+				</AuthRoute>
+			</Switch>
+		</BrowserRouter>
+	);
 }
 
 export default App;

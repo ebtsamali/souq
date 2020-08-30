@@ -1,0 +1,58 @@
+@import "./main";
+
+.x-container-cart {
+   display: flex;
+   overflow: hidden;
+   height: 100%;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.empty-cart-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   margin-top: 100px;
+   h2 {
+      font-weight: bold;
+      color: $color_accent_light;
+   }
+   h5 {
+      color: $color_primary;
+      text-decoration: none;
+   }
+}
+
+.product-card {
+   background-color: $color_accent_lighter;
+   border: 1px solid $color_primary;
+}
+
+.product-price {
+   font-size: 21px;
+   color: $color_primary;
+}
+
+.order-btn {
+   background-color: $color_primary;
+   float: right;
+   border: none;
+   margin-top: 10px;
+   font-size: 22px;
+}
+
+.add-icon {
+   margin-right: 10px;
+   color: red;
+   font-size: 30px;
+   margin-top: 80px;
+   cursor: pointer;
+}
+
+.remove-icon {
+   color: gray;
+   font-size: 30px;
+   cursor: pointer;
+}

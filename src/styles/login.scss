@@ -1,0 +1,94 @@
+@import "main";
+
+.login-page-container{
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+}
+
+.right-container {
+   width: 100%;
+   background-color: #f2efef;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   // background: linear-gradient(180deg, #4cbb9e 0%, #226057 100%);
+}
+
+.proj-title {
+   margin-left: 3em;
+}
+
+.login-card-mod{
+   border: $color_primary;
+   border-style: solid;
+   border-radius: 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 1em;
+   width: 30em;
+   min-width: 35%;
+   background-color: white;
+   margin-bottom: 4.5em;
+}
+
+
+.email-input-mod, .password-input-mod {
+   border-radius: 1.5em;
+   border-style: solid;
+   border-width: 0.126em;
+   border-color: $color_primary_light;
+
+   outline: none !important;
+
+   padding-left: 1.1em;
+   padding-top: 0.4em;
+   padding-bottom: 0.4em;
+
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+.email-input-mod:focus, .password-input-mod:focus {
+   outline: none;
+   border: 0.126em solid $color_primary;
+}
+
+.login-card-mod {
+   h3{
+      text-align: center;
+      color: $color_accent;
+      margin-bottom: 1.5em;
+      font-weight: bold;
+   }
+
+   p{
+      text-align: center;
+   }
+}
+
+
+.login-btn{
+   background: linear-gradient(90deg, rgba(76,187,158,1) 0%, rgba(34,96,87,1) 100%);
+   border: none;
+   border-radius: 2em;
+   text-transform: capitalize;
+   padding-bottom: 0.5em;
+   padding-top: 0.5em;
+   font-weight: bold;
+   color: white;
+   margin-top: 2em;
+   margin-bottom: 1em;
+}
+
+.error {
+   p {
+      color: red;
+      margin-bottom: 0;
+      text-align: left;
+      font-weight: bold;
+      margin-left: 1em;
+   }
+}
